@@ -1,0 +1,45 @@
+# ============================================================
+# requirements.txt — Proyek Analisis Sentimen Ulasan OVO
+# ============================================================
+# Install semua dependensi dengan:
+#   pip install -r requirements.txt
+#
+# Notebook yang dicakup:
+#   data_scraping.ipynb         → scraping Google Play Store
+#   label.ipynb                 → auto-labeling dengan model transformer
+#   datatext_preprocessing.ipynb → preprocessing teks Bahasa Indonesia
+#   bow-vec.ipynb               → pemodelan dengan BoW + klasifikasi
+#   tf-idf.ipynb                → pemodelan dengan TF-IDF + klasifikasi
+#   word2vec.ipynb              → pemodelan dengan Word2Vec + klasifikasi
+#   Inferensi.ipynb             → inference model tersimpan
+# ============================================================
+
+# ── Data & Numerik ──────────────────────────────────────────
+numpy==2.4.3
+pandas==3.0.1
+
+# ── Scraping Google Play Store ──────────────────────────────
+google-play-scraper==1.2.7
+
+# ── NLP & Preprocessing ─────────────────────────────────────
+nltk==3.9.4
+emoji==2.15.0
+PySastrawi==1.2.0          # Stemmer Bahasa Indonesia
+swifter==1.4.0             # Akselerasi apply() pandas
+
+# ── Auto-Labeling (Transformer) ─────────────────────────────
+transformers==5.5.4
+torch==2.11.0
+tqdm==4.67.3
+
+# ── Word Embedding ──────────────────────────────────────────
+gensim==4.4.0              # Word2Vec
+
+# ── Machine Learning ────────────────────────────────────────
+scikit-learn==1.8.0        # SVM, MLP, CountVectorizer, TfidfVectorizer, LabelEncoder, dll.
+lightgbm==4.6.0            # LightGBM Classifier
+joblib==1.5.3              # Simpan / load model .pkl
+
+# ── Visualisasi ─────────────────────────────────────────────
+matplotlib==3.10.8
+seaborn==0.13.2
