@@ -1,0 +1,32 @@
+{
+  "model_name": "MLP",
+  "feature_extraction": "BoW (CountVectorizer)",
+  "saved_at": "2026-04-21 02:42:46",
+  "classes": [
+    "Negatif",
+    "Netral",
+    "Positif"
+  ],
+  "optimal_thresholds": {
+    "Negatif": 0.23,
+    "Netral": 0.05,
+    "Positif": 0.55
+  },
+  "requires_scaler": false,
+  "bow_params": {
+    "max_features": 5000,
+    "ngram_range": [
+      1,
+      2
+    ],
+    "binary": false,
+    "min_df": 2,
+    "max_df": 0.95
+  },
+  "metrics": {
+    "accuracy": 0.8745,
+    "precision": 0.8546,
+    "recall": 0.8745,
+    "f1_score": 0.8552
+  }
+}
