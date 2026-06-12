@@ -1,10 +1,10 @@
-# 🔍 Sentiment Analysis — OVO App Reviews (Google Play Store)
+# Sentiment Analysis — OVO App Reviews (Google Play Store)
 
-> An end-to-end NLP pipeline for classifying user sentiment on the **OVO** mobile app, scraped from Google Play Store — covering data collection, auto-labeling, preprocessing, modeling, and inference.
+> This project presents an end-to-end NLP pipeline to classify sentiment in OVO mobile app reviews collected from the Google Play Store, covering data scraping, automatic labeling, preprocessing, model development, and inference.
 
 ---
 
-## 📌 Overview
+## Overview
 
 This project builds a three-class sentiment classification system (**Positive**, **Negative**, **Neutral**) on Indonesian-language reviews of the OVO digital payment app from Google Play Store. The pipeline is fully automated from raw data collection to a deployable inference module.
 
@@ -100,7 +100,7 @@ Preprocessing steps applied:
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Clone the Repository
 ```bash
@@ -125,7 +125,7 @@ pip install -r requirements.txt
 
 ---
 
-## 📊 Dataset
+## Dataset
 
 | Property | Details |
 |----------|---------|
@@ -137,7 +137,7 @@ pip install -r requirements.txt
 
 ---
 
-## 📋 Requirements
+## Requirements
 
 ```
 emoji==2.15.0
@@ -160,7 +160,7 @@ transformers==5.6.0
 
 ---
 
-## 📝 Notes
+## Notes
 
 - **Stemming was intentionally skipped** — to preserve semantic context in BoW and TF-IDF representations, which are sensitive to word form variation.
 - **No manual annotation** — labeling is fully automated using the IndoRoBERTa pretrained model.
