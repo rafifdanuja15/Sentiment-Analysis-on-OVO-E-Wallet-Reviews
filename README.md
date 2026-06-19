@@ -121,7 +121,7 @@ pip install -r requirements.txt
 | 2 | `02_data_labeling.ipynb` | Auto-label reviews using IndoRoBERTa |
 | 3 | `03_data_preprocessing.ipynb` | Clean and normalize text |
 | 4 | `04-data-modeling.ipynb` | Train and evaluate classifiers |
-| 5 | `07_inference.ipynb` | Run sentiment prediction on new input |
+| 5 | `05_inference.ipynb` | Run sentiment prediction on new input |
 
 ---
 
