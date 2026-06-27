@@ -27,7 +27,7 @@ sentiment_ovo/
 
 ---
 
-## ⚙️ Pipeline
+## Pipeline
 
 ```
 Google Play Store
@@ -51,7 +51,23 @@ Google Play Store
 
 ---
 
-## 🛠️ Tech Stack
+## Results
+
+Performance comparison after hyperparameter tuning (3-class: Positive / Negative / Neutral):
+
+| Model | Accuracy | F1-Score (macro) |
+|---|---|---|
+| **MLP + BoW** | **0.8768** | **0.8457** |
+| LightGBM + BoW | 0.8671 | 0.8348 |
+| SVM + TF-IDF | 0.8611 | 0.8284 |
+
+**Best model: MLP + BoW** with accuracy **87.68%** and macro F1-score **84.57%** after tuning.
+
+> All metrics are evaluated on the held-out test set. Tuning was performed via grid search / random search over hyperparameter space for each model.
+
+---
+
+## Tech Stack
 
 ### Data Collection
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
@@ -168,7 +184,7 @@ transformers==5.6.0
 
 ---
 
-## 👤 Author
+## Author
 
 **Muhammad Rafif Danuja**  
 Statistics and Data Science — IPB University
